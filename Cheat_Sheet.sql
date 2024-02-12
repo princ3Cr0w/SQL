@@ -36,4 +36,27 @@ CREATE TABLE table_name (
 ALTER TABLE table_name
 ADD column_name datatype
 
--- 
+-- DROP TABLE Statement:
+
+DROP TABLE table_name
+
+-- JOINs:
+
+SELECT column1, column2, ...
+FROM table1
+JOIN table2 ON table1.column_name = table2.column_name
+
+-- GROUP BY:
+
+SELECT column1, aggregate_function(column2)
+FROM table_name
+GROUP BY column1
+
+-- HAVING Clause:
+
+SELECT column1, aggregate_function(column2)
+FROM table_name
+GROUP BY column1
+HAVING condition
+
+
