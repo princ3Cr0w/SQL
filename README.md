@@ -2,27 +2,39 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
+- [Business Task](#businesstask)
+- [Analysis](#analysis)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
 
-This is a quick cheat sheet syntax for SQL.
+This is an analysis using BigQuery data-set.
 
-## Features
+## Business Task
 
-Here are the features of my project.
+Business task is to find average birth rates in the US.
 
-## Installation
+## Data Source
 
-Instructions for installing my project.
+<a href="bigquery-public-data.sdoh_cdc_wonder_natality">CDC 2018 Natality</a>
 
-## Usage
 
-Information on how to use my project.
+## Analysis
+
+Sequence of analysis using discrete SQL syntax 
+ ```r
+-- fetching WHERE births are 1265
+
+SELECT * FROM `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` 
+ WHERE Births = 1265
+
+-- fetching average limited by 10 rows
+
+SELECT Ave_Pre_pregnancy_BMI FROM `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` 
+ LIMIT 10
+```
 
 ## Contributing
 
