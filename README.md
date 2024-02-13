@@ -1,5 +1,5 @@
 # SQL
-
+<code style="color : purple">Analyze Phase</code>
  ```mermaid
 graph TD;
     Ask-->Plan;
