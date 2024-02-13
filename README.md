@@ -1,4 +1,15 @@
 # SQL
+
+ ```mermaid
+graph TD;
+    Ask-->Plan;
+    Plan-->Process;
+    Process-->Analyze;
+    Analyze-->Share;
+    Share-->Act;
+```
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
